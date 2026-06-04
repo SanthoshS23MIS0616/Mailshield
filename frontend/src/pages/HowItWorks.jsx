@@ -42,10 +42,10 @@ export default function HowItWorks() {
       <div className="glass-card fade-up-1" style={{ padding: 28, textAlign: 'center' }}>
         <div style={{ fontSize: 48, marginBottom: 12 }}>🧠</div>
         <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 26, fontWeight: 700, marginBottom: 8 }} className="gradient-text">
-          How PhishGuard AI Works
+          How Mailshield Works
         </div>
-        <div style={{ fontSize: 14, color: '#7c3aed', maxWidth: 540, margin: '0 auto', lineHeight: 1.7 }}>
-          A transparent look at the machine learning pipeline that classifies emails as phishing or safe — from raw text to verdict.
+        <div style={{ fontSize: 15, color: '#5b21b6', maxWidth: 560, margin: '0 auto', lineHeight: 1.7, fontWeight: 500 }}>
+          Mailshield reads the subject and message body, checks for risky patterns, and shows whether the email looks safe or suspicious.
         </div>
       </div>
 

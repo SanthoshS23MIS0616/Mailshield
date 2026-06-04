@@ -65,9 +65,9 @@ export default function App() {
               }}>🛡️</div>
               <div>
                 <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 16, lineHeight: 1, color: '#2d1b69' }}>
-                  PhishGuard
+                  Mailshield
                 </div>
-                <div style={{ fontSize: 10, color: 'rgba(109,40,217,0.5)', letterSpacing: 1, textTransform: 'uppercase' }}>AI Detection</div>
+                <div style={{ fontSize: 10, color: '#5b21b6', letterSpacing: 1, textTransform: 'uppercase' }}>Email Security</div>
               </div>
             </div>
 
@@ -122,10 +122,10 @@ export default function App() {
           }}>
             <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
               <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 36, fontWeight: 700, marginBottom: 10, lineHeight: 1.2 }} className="gradient-text">
-                Phishing Email Detection AI
+                Mailshield
               </div>
-              <div style={{ fontSize: 15, color: '#7c3aed', maxWidth: 600, margin: '0 auto', lineHeight: 1.7 }}>
-                Powered by an ensemble ML model trained on 2,000 emails. Paste any email and get an instant verdict with full explainability.
+              <div style={{ fontSize: 16, color: '#5b21b6', maxWidth: 600, margin: '0 auto', lineHeight: 1.7, fontWeight: 500 }}>
+                Paste an email to check for phishing signs and get a clear risk result before you trust it.
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: 12, marginTop: 16, flexWrap: 'wrap' }}>
                 {[
@@ -162,10 +162,8 @@ export default function App() {
           background: 'rgba(255,255,255,0.4)',
           backdropFilter: 'blur(12px)',
         }}>
-          <div style={{ fontSize: 12, color: 'rgba(109,40,217,0.5)', lineHeight: 1.8 }}>
-            🛡️ <strong style={{ color: '#7c3aed' }}>PhishGuard AI</strong> · Built with Scikit-learn, Flask & React ·{' '}
-            <span style={{ fontFamily: 'JetBrains Mono, monospace' }}>Ensemble (RF + GBM + LR)</span> ·{' '}
-            For educational and defensive security purposes
+          <div style={{ fontSize: 14, color: '#5b21b6', lineHeight: 1.8, fontWeight: 700 }}>
+            Santhosh S
           </div>
         </footer>
       </div>

@@ -22,8 +22,9 @@ from sklearn.compose import ColumnTransformer
 from dataset import generate_dataset
 from features import extract_features, get_feature_names
 
-MODEL_PATH = "model.pkl"
-METRICS_PATH = "metrics.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+METRICS_PATH = os.path.join(BASE_DIR, "metrics.json")
 
 
 def build_feature_matrix(emails):

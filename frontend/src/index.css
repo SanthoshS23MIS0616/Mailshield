@@ -26,7 +26,18 @@ html { scroll-behavior: smooth; }
   min-height: 100vh;
   color: #2d1b69;
   overflow-x: hidden;
-  font-size: 1.75rem; /* ← add this line here */
+  font-size: 16px;
+}
+
+body,
+button,
+input,
+textarea {
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  font-size: 1.1rem;
 }
 
 
@@ -113,14 +124,23 @@ html { scroll-behavior: smooth; }
   background: rgba(255,255,255,0.80);
   border: 1.5px solid rgba(196,181,253,0.4);
   border-radius: 12px; padding: 14px 18px;
-  font-family: 'DM Sans', sans-serif; font-size: 15px;
+  font-family: 'DM Sans', sans-serif; font-size: 16px;
   color: #2d1b69; width: 100%;
   transition: all 0.25s ease; outline: none; backdrop-filter: blur(8px);
 }
-.input-glass::placeholder { color: rgba(109,40,217,0.35); }
+.input-glass::placeholder { color: rgba(76,29,149,0.58); }
 .input-glass:focus {
   border-color: #a78bfa; background: rgba(255,255,255,0.95);
   box-shadow: 0 0 0 3px rgba(167,139,250,0.15);
+}
+
+main {
+  font-size: 1.08em;
+}
+
+main .glass-card,
+main .glass-card-sm {
+  color: #2d1b69;
 }
 
 /* ── Risk bar ──────────────────────────────────────────────── */
