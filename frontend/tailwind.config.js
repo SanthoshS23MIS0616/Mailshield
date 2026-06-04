@@ -33,3 +33,23 @@ export default {
   },
   plugins: []
 }
+
+module.exports = {
+  theme: {
+    extend: {
+      fontSize: {
+        // 1.75× scale of Tailwind defaults
+        'sm':  ['0.875rem', { lineHeight: '1.5rem' }],   // was 0.875
+        'base':['1.75rem',  { lineHeight: '2.625rem' }], // was 1rem → ×1.75
+        'lg':  ['1.969rem', { lineHeight: '3rem' }],     // was 1.125
+        'xl':  ['2.188rem', { lineHeight: '3.25rem' }],  // was 1.25
+        '2xl': ['2.625rem', { lineHeight: '3.75rem' }],  // was 1.5
+        '3xl': ['3.281rem', { lineHeight: '4.375rem' }], // was 1.875
+        '4xl': ['3.938rem', { lineHeight: '1.1' }],      // was 2.25
+        // Hero title (h1) — leave 5xl/6xl untouched:
+        '5xl': ['3rem',     { lineHeight: '1' }],        // ORIGINAL, no change
+        '6xl': ['3.75rem',  { lineHeight: '1' }],        // ORIGINAL, no change
+      }
+    }
+  }
+}

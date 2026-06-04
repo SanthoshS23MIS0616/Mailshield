@@ -191,3 +191,56 @@ body {
 /* ── Stat card ─────────────────────────────────────────────── */
 .stat-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
 .stat-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(167,139,250,0.18); }
+
+/* ── Global text scale-up (1.75×) ── */
+/* Base font bump — affects everything except the hero title */
+body {
+  font-size: calc(1rem * 1.75); /* 16px → 28px base */
+}
+
+/* Navbar links */
+nav a, nav button {
+  font-size: 1rem; /* inherits the scaled base */
+}
+
+/* Stat numbers (28, 3, 100%, <50ms) */
+.stat-value, [class*="stat"] h3, [class*="stat"] span {
+  font-size: 1rem;
+}
+
+/* Stat labels (FEATURES EXTRACTED etc.) */
+.stat-label, [class*="stat"] p {
+  font-size: 0.75rem;
+}
+
+/* Subtitle under hero title */
+.hero-subtitle, [class*="hero"] p, [class*="subtitle"] {
+  font-size: 1rem;
+}
+
+/* Input labels, placeholder text */
+label, input, textarea, ::placeholder {
+  font-size: 1rem;
+}
+
+/* Sidebar example email text */
+[class*="example"] p, [class*="example"] span {
+  font-size: 1rem;
+}
+
+/* Footer bar */
+footer, [class*="footer"] {
+  font-size: 1rem;
+}
+
+/* How It Works page — pipeline step text */
+[class*="pipeline"] p, [class*="step"] p, [class*="step"] span {
+  font-size: 1rem;
+}
+
+/* ── LOCK the hero title — do NOT scale it ── */
+[class*="hero"] h1,
+h1[class*="title"],
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important; /* same as original */
+}
