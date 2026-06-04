@@ -1,0 +1,88 @@
+{
+  "accuracy": 100.0,
+  "precision": 100.0,
+  "recall": 100.0,
+  "f1_score": 100.0,
+  "roc_auc": 100.0,
+  "cv_mean": 100.0,
+  "cv_std": 0.0,
+  "cv_scores": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "confusion_matrix": {
+    "true_negative": 200,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_positive": 200
+  },
+  "feature_importance": [
+    {
+      "feature": "avg_word_length",
+      "importance": 16.776
+    },
+    {
+      "feature": "phishing_keyword_count",
+      "importance": 15.563
+    },
+    {
+      "feature": "keyword_ratio",
+      "importance": 14.726
+    },
+    {
+      "feature": "num_urls",
+      "importance": 13.941
+    },
+    {
+      "feature": "has_http_url",
+      "importance": 10.392
+    },
+    {
+      "feature": "avg_url_length",
+      "importance": 8.363
+    },
+    {
+      "feature": "subject_length",
+      "importance": 5.175
+    },
+    {
+      "feature": "has_suspicious_url",
+      "importance": 4.086
+    },
+    {
+      "feature": "body_length",
+      "importance": 3.477
+    },
+    {
+      "feature": "max_url_dots",
+      "importance": 2.083
+    },
+    {
+      "feature": "has_deadline",
+      "importance": 2.031
+    },
+    {
+      "feature": "has_financial_info_request",
+      "importance": 1.189
+    },
+    {
+      "feature": "all_caps_words",
+      "importance": 0.885
+    },
+    {
+      "feature": "legit_keyword_count",
+      "importance": 0.455
+    },
+    {
+      "feature": "text_entropy",
+      "importance": 0.392
+    }
+  ],
+  "train_samples": 1600,
+  "test_samples": 400,
+  "feature_count": 28,
+  "model_type": "Ensemble (RF + GBM + LR)"
+}

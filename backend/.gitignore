@@ -1,0 +1,7 @@
+echo venv/ > .gitignore
+echo __pycache__/ >> .gitignore
+echo *.pkl >> .gitignore
+echo *.joblib >> .gitignore
+echo .env >> .gitignore
+echo node_modules/ >> .gitignore
+echo *.pyc >> .gitignore
